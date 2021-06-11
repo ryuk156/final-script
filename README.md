@@ -1,7 +1,7 @@
 # Module Generation Automation
 
 The automation focuses on automating the ModuleSite for gathering information about modules from Terasology Organization and 
-exhibit their generated information on ModuleSite.This uses an automation tool called Jenkins, which provides stages in the 
+exhibit their generated information on ModuleSite.This uses an automation tool called Jenkins, which provides stages and steps in the 
 Jenkins pipeline to perform different operations
 
 ## File Structure
