@@ -38,10 +38,10 @@ for i in $(ls -d ./meta-data/*); do
 
     if [ -f "$moduleLogoP" ]; then
       cp $moduleLogoP "$DST"/"$moduleName"
-      echo "logo: \"./logo.png\"" >>"$DST"/"$moduleName"/index.md
+      echo "cover: \"./logo.png\"" >>"$DST"/"$moduleName"/index.md
     elif [ -f "$moduleLogoJ" ]; then
       cp $moduleLogoJ "$DST"/"$moduleName"
-      echo "logo: \"./logo.png\"" >>"$DST"/"$moduleName"/index.md
+      echo "cover: \"./logo.png\"" >>"$DST"/"$moduleName"/index.md
     elif [ -f "$modulecoverP" ]; then
       cp $modulecoverP "$DST"/"$moduleName"
       echo "cover: \"./cover.png\"" >>"$DST"/"$moduleName"/index.md
@@ -77,7 +77,7 @@ for i in $(ls -d ./meta-data/*); do
     fi
 
     if [ ${#moduleCat[*]} >0]; then
-      echo "Tag: \"${moduleCat[0]}\"" >>"$DST"/"$moduleName"/index.md
+      echo "tags: \"${moduleCat[0]}\"" >>"$DST"/"$moduleName"/index.md
     fi
 
     echo "---" >>"$DST"/"$moduleName"/index.md
